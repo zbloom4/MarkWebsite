@@ -97,31 +97,39 @@
 			</ul>
 	</section><!-- End services -->
 
-    <section id="ourWork" class="services wrapper">
-        <h2>Our Work</h2>
-        <div class="separator">
-            <img src="img/separator.png" alt=""/>
+	    <!-- Contact section -->
+    <section id="contact" style="margin-bottom: 40px">
+        <div class="container">
+            <div class="row">
+
+                <div class="sec-title text-center wow animated fadeInDown">
+                    <h2>Contact</h2>
+                    <p>Leave a Message</p>
+                </div>
+
+
+                <div class="col-md-12 contact-form wow animated fadeInLeft">
+                    <form action="{{secure_url('email')}}" method="post">
+                        <div class="input-field">
+                            <input type="text" name="name" class="form-control" placeholder="Your Name...">
+                        </div>
+                        <div class="input-field">
+                            <input type="email" name="email" class="form-control" placeholder="Your Email...">
+                        </div>
+                        <div class="input-field">
+                            <input type="text" name="subject" class="form-control" placeholder="Subject...">
+                        </div>
+                        <div class="input-field">
+                            <textarea name="message" class="form-control" placeholder="Messages..."></textarea>
+                        </div>
+                        <button type="submit" id="submit" class="btn btn-blue btn-effect">Send</button>
+                    </form>
+                </div>
+            </div>
         </div>
-        <ul>
-            <li>
-                <img class="s_icons" src="img/s1.png" alt=""/>
-                <h3>Training and Habilitation Services</h3>
-                <p>Services are typically furnished in the consumer’s home, focused on support in tasks vital to living in the community, but which the consumer cannot perform independently</p>
-            </li>
+    </section>
 
-            <li>
-                <img class="s_icons" src="img/s2.png" alt=""/>
-                <h3>24 Hour Emergency Assistance Service</h3>
-            <p>On an individual basis, CIN will assist in designing a 24-hour emergency response system in a consumer’s residence. 24-hour emergency services are individually tailored to the strengths and capabilities of the consumer and responsive to both Urgent Assistance and Crisis Assistance needs</p>
-            </li>
-
-            <li>
-                <img class="s_icons" src="img/s3.png" alt=""/>
-                <h3>Adaptive Equipment</h3>
-                <p>Adaptive equipment services enable the individual to live in a supported living arrangement; to gain physical access to community services; to be mobile and have greater independence in the home of their choice and their community; and to have access to devices, controls and appliances that increase their productivity, independence and community integration</p>
-            </li>
-        </ul>
-    </section><!-- End services -->
+<!-- End services -->
 
 
 
@@ -166,6 +174,33 @@
 	{{--</section><!-- End testimonials -->--}}
 
     <!-- Contact section -->
+
+	<section id="ourWork" class="services wrapper">
+        <h2>Our Work</h2>
+        <div class="separator">
+            <img src="img/separator.png" alt=""/>
+        </div>
+        <ul>
+            <li>
+                <img class="s_icons" src="img/s1.png" alt=""/>
+                <h3>Training and Habilitation Services</h3>
+                <p>Services are typically furnished in the consumer’s home, focused on support in tasks vital to living in the community, but which the consumer cannot perform independently</p>
+            </li>
+
+            <li>
+                <img class="s_icons" src="img/s2.png" alt=""/>
+                <h3>24 Hour Emergency Assistance Service</h3>
+            <p>On an individual basis, CIN will assist in designing a 24-hour emergency response system in a consumer’s residence. 24-hour emergency services are individually tailored to the strengths and capabilities of the consumer and responsive to both Urgent Assistance and Crisis Assistance needs</p>
+            </li>
+
+            <li>
+                <img class="s_icons" src="img/s3.png" alt=""/>
+                <h3>Adaptive Equipment</h3>
+                <p>Adaptive equipment services enable the individual to live in a supported living arrangement; to gain physical access to community services; to be mobile and have greater independence in the home of their choice and their community; and to have access to devices, controls and appliances that increase their productivity, independence and community integration</p>
+            </li>
+        </ul>
+    </section>
+
     <section id="employment" style="margin-bottom: 40px">
         <div class="container">
             <div class="row">
@@ -177,7 +212,7 @@
 
 
                 <div class="col-md-12 contact-form wow animated fadeInLeft">
-                    <form action="#" method="post">
+                    <form action="<?php echo base_url();?>email" method="post">
                         <div class="input-field">
                             <input type="text" name="name" class="form-control" placeholder="Your Name...">
                         </div>
@@ -189,38 +224,6 @@
                         </div>
                         <div class="input-field">
                             <input type="file" name="resume" class="form-control">
-                        </div>
-                        <button type="submit" id="submit" class="btn btn-blue btn-effect">Send</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact section -->
-    <section id="contact" style="margin-bottom: 40px">
-        <div class="container">
-            <div class="row">
-
-                <div class="sec-title text-center wow animated fadeInDown">
-                    <h2>Contact</h2>
-                    <p>Leave a Message</p>
-                </div>
-
-
-                <div class="col-md-12 contact-form wow animated fadeInLeft">
-                    <form action="#" method="post">
-                        <div class="input-field">
-                            <input type="text" name="name" class="form-control" placeholder="Your Name...">
-                        </div>
-                        <div class="input-field">
-                            <input type="email" name="email" class="form-control" placeholder="Your Email...">
-                        </div>
-                        <div class="input-field">
-                            <input type="text" name="subject" class="form-control" placeholder="Subject...">
-                        </div>
-                        <div class="input-field">
-                            <textarea name="message" class="form-control" placeholder="Messages..."></textarea>
                         </div>
                         <button type="submit" id="submit" class="btn btn-blue btn-effect">Send</button>
                     </form>
