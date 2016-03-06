@@ -78,19 +78,19 @@
 			</div>
 			<ul>
 				<li>
-					<img class="s_icons" src="{{secure_asset('/img/home.png')}}" height="100px" width="100px"/>
+					<img class="s_icons" src="/img/home.png" height="100px" width="100px"/>
 					<h3>Assistance Services</h3>
 					<p>Supported Living Services (SLS) consist of a broad range of services to adults with developmental disabilities who, through the Individual Program Plan (IPP) process, choose to live in homes they themselves own or lease in the community.</p>
 				</li>
 
 				<li>
-					<img class="s_icons" src="{{secure_asset('/img/plan.png')}}" height="100px" width="100px"/>
+					<img class="s_icons" src="/img/plan.png" height="100px" width="100px"/>
 					<h3>Future Planning</h3>
 					<p>A personal support planning and assessment may be arranged to plan what types of support a person needs and/or desires to lead a self-determined life style while maintaining themselves safely and happily</p>
 				</li>
 
 				<li>
-					<img class="s_icons" src="{{secure_asset('/img/community.png')}}" height="100px" width="100px"/>
+					<img class="s_icons" src="/img/community.png" height="100px" width="100px"/>
 					<h3>Community Support</h3>
 					<p>Community support services occur primarily outside the consumer’s home. The focus is on facilitation, support and assistance to access the larger community, generic agencies, and local business resources</p>
 				</li>
@@ -185,20 +185,20 @@
         </div>
         <ul>
             <li>
-                <img style="-webkit-user-select:none; display:block; margin: auto;" src="{{secure_asset('/img/user-male-icon.png')}}" height="100px" width="100px"/>
+                <img style="-webkit-user-select:none; display:block; margin: auto;" src="/img/user-male-icon.png" height="100px" width="100px"/>
 
                 <h3>Training and Habilitation Services</h3>
                 <p>Services are typically furnished in the consumer’s home, focused on support in tasks vital to living in the community, but which the consumer cannot perform independently</p>
             </li>
 
             <li>
-                <img class="s_icons" src="{{secure_asset('/img/emergencyicon.png')}}" height="100px" width="100px"/>
+                <img class="s_icons" src="/img/emergencyicon.png" height="100px" width="100px"/>
                 <h3>24 Hour Emergency Assistance Service</h3>
             <p>On an individual basis, CIN will assist in designing a 24-hour emergency response system in a consumer’s residence. 24-hour emergency services are individually tailored to the strengths and capabilities of the consumer and responsive to both Urgent Assistance and Crisis Assistance needs</p>
             </li>
 
             <li>
-                <img class="s_icons" src="{{secure_asset('/img/wheelchair.png')}}" height="100px" width="100px"/>
+                <img class="s_icons" src="/img/wheelchair.png" height="100px" width="100px"/>
                 <h3>Adaptive Equipment</h3>
                 <p>Adaptive equipment services enable the individual to live in a supported living arrangement; to gain physical access to community services; to be mobile and have greater independence in the home of their choice and their community; and to have access to devices, controls and appliances that increase their productivity, independence and community integration</p>
             </li>
