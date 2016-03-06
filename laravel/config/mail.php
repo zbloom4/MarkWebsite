@@ -28,7 +28,7 @@ return [
     |
     */
 
-    'host' => env('MAIL_HOST', 'smtp.mandrillapp.com'),
+    'host' => env('MAIL_HOST', 'smtp.gmail.com'),
 
     /*
     |--------------------------------------------------------------------------
@@ -54,7 +54,7 @@ return [
     |
     */
 
-    'from' => ['address' => 'cin@communityintegrationnetwork.com', 'name' => 'Community Integration Network'],
+    'from' => ['address' => 'team@communityintegrationnetwork.org', 'name' => 'Community Integration Network'],
 
     /*
     |--------------------------------------------------------------------------
@@ -80,7 +80,7 @@ return [
     |
     */
 
-    'username' => env('MAIL_USERNAME'),
+    'username' => env('MAIL_USERNAME', 'cinsls92@gmail.com'),
 
     /*
     |--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ return [
     |
     */
 
-    'password' => 'n-7SUIieFD77ODkF31VnEA',
+    'password' => 'coeifskngvakfscr',
 
     /*
     |--------------------------------------------------------------------------
