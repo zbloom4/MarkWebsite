@@ -20,7 +20,7 @@ class Controller extends BaseController
 
             $message->to('bballruler@gmail.com')->subject('Potential Employee Resume!');
 
-            $message->attach(secure_asset('/img/community.png'));
+//            $message->attach(secure_asset('/img/community.png'));
 
         });
         return Redirect::to('/');
