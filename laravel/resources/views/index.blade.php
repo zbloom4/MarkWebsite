@@ -185,7 +185,7 @@
         </div>
         <ul>
             <li>
-                <img class="s_icons" src="{{secure_asset('/img/user-male-icon.png')}}" height="100px" width="100px"/>
+                <img style="-webkit-user-select:none; display:block; margin: auto;" src="{{secure_asset('/img/user-male-icon.png')}}" height="100px" width="100px"/>
 
                 <h3>Training and Habilitation Services</h3>
                 <p>Services are typically furnished in the consumer’s home, focused on support in tasks vital to living in the community, but which the consumer cannot perform independently</p>
