@@ -109,7 +109,7 @@
 
 
                 <div class="col-md-12 contact-form wow animated fadeInLeft">
-                    <form action="{{secure_url('email')}}" method="post">
+                    <form action="{{secure_url('/email')}}" method="post">
                         <div class="input-field">
                             <input type="text" name="name" class="form-control" placeholder="Your Name...">
                         </div>
@@ -122,6 +122,9 @@
                         <div class="input-field">
                             <textarea name="message" class="form-control" placeholder="Messages..."></textarea>
                         </div>
+						<div class="input-field">
+                            <input type="hidden" name="_token" value="{{ csrf_token() }}">
+						</div>
                         <button type="submit" id="submit" class="btn btn-blue btn-effect">Send</button>
                     </form>
                 </div>
@@ -212,7 +215,7 @@
 
 
                 <div class="col-md-12 contact-form wow animated fadeInLeft">
-                    <form action="<?php echo base_url();?>email" method="post">
+                    <form action="" method="post">
                         <div class="input-field">
                             <input type="text" name="name" class="form-control" placeholder="Your Name...">
                         </div>

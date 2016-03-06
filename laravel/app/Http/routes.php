@@ -11,7 +11,6 @@
 |
 */
 
-
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -24,10 +23,8 @@
 */
 
 Route::group(['middleware' => ['web']], function () {
-    //
     Route::get('/', function () {
         return view('index');
     });
-
     Route::post('/email', 'Controller@sendEmailReminder');
 });
