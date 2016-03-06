@@ -109,7 +109,7 @@
 
 
                 <div class="col-md-12 contact-form wow animated fadeInLeft">
-                    <form action="{{secure_url('/email')}}" method="post">
+                    <form action="/email" method="post">
                         <div class="input-field">
                             <input type="text" name="name" class="form-control" placeholder="Your Name...">
                         </div>
@@ -216,7 +216,7 @@
 
 
                 <div class="col-md-12 contact-form wow animated fadeInLeft">
-                    <form action="{{secure_url('/email')}}" method="post">
+                    <form action="/email" method="post">
                         <div class="input-field">
                             <input type="text" name="name" class="form-control" placeholder="Your Name...">
                         </div>
