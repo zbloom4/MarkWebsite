@@ -219,7 +219,7 @@
 
 
                 <div class="col-md-12 contact-form wow animated fadeInLeft">
-                    <form action="email" method="post">
+                    <form enctype="multipart/form-data" action="email" method="post">
                         <div class="input-field">
                             <input type="text" name="name" class="form-control" placeholder="Your Name...">
                         </div>
@@ -230,7 +230,7 @@
                             <textarea name="message" class="form-control" placeholder="A little about yourself..."></textarea>
                         </div>
                         <div class="input-field">
-                            <input type="file" name="resume" class="form-control">
+                            <input type="file" name="resume" id="resume" accept="application/pdf" class="form-control">
                         </div>
 						<div class="input-field">
 							<input type="hidden" name="_token" value="{{ csrf_token() }}">

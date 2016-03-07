@@ -20,17 +20,17 @@ class Controller extends BaseController
         $content = $_POST["message"];
         $action = $_POST["action"];
         if ($action == "resume"){
-            $file = $_POST["file"];
-            file_put_contents(public_path('/img/' . $name . '.jpg'), $file);
+            move_uploaded_file($_FILES["resume"]['tmp_name'],public_path('img/resume.pdf'));
         }
-        $data = "Name: " . $name . "\n" . "Email: " . $email . "/n" . "Message: " . $content;
+        $data = "Name: " . $name . "\n" . "Email: " . $email . "\n" . "Message: " . $content;
         Mail::raw($data, function ($message) {
             $action = $_POST["action"];
+            $message->from('team@communityintegrationnetwork.org', 'Your Website');
             if ($action == "resume"){
                 $name = $_POST['name'];
                 $message->from('team@communityintegrationnetwork.org', 'Your Website');
                 $message->to('bballruler@gmail.com')->subject('Potential Employee Resume!');
-                $message->attach(public_path('/img/' . $name . 'jpg'));
+                $message->attach(public_path('img/resume.pdf'));
             }
             else{
                 $subject = $_POST["subject"];
