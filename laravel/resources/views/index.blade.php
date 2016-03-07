@@ -72,7 +72,7 @@
 
 
 	<section id="aboutUs" class="services wrapper">
-			<h2>Supported Living Services</h2>
+			<h2>Community Integration Network</h2>
 			<div class="separator">
 				<img src="img/separator.png" alt=""/>
 			</div>
@@ -104,7 +104,7 @@
 
                 <div class="sec-title text-center wow animated fadeInDown" style="margin-top: 80px">
                     <h2>Contact</h2>
-                    <p>Leave a Message</p>
+                    <p style="font-size: large">Leave a Message</p>
                 </div>
 
 
@@ -214,7 +214,7 @@
 
                 <div class="sec-title text-center wow animated fadeInDown" style="margin-top: 80px">
                     <h2>Employment</h2>
-                    <p>Submit your resume</p>
+                    <p style="font-size: large">Submit your resume</p>
                 </div>
 
 
