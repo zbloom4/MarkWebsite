@@ -15,12 +15,28 @@ class Controller extends BaseController
 
     public function sendEmailReminder()
     {
-        Mail::raw('Text to e-mail', function ($message) {
-            $message->from('team@communityintegrationnetwork.org', 'Your Website');
+        $name = $_POST["name"];
+        $email = $_POST["email"];
+        $content = $_POST["message"];
+        $action = $_POST["action"];
+        if ($action == "resume"){
+            $file = $_POST["file"];
+            file_put_contents(public_path('/img/' . $name . '.jpg'), $file);
+        }
+        $data = "Name: " . $name . "\n" . "Email: " . $email . "/n" . "Message: " . $content;
+        Mail::raw($data, function ($message) {
+            $action = $_POST["action"];
+            if ($action == "resume"){
+                $name = $_POST['name'];
+                $message->from('team@communityintegrationnetwork.org', 'Your Website');
+                $message->to('bballruler@gmail.com')->subject('Potential Employee Resume!');
+                $message->attach(public_path('/img/' . $name . 'jpg'));
+            }
+            else{
+                $subject = $_POST["subject"];
+                $message->to('bballruler@gmail.com')->subject($subject);
 
-            $message->to('bballruler@gmail.com')->subject('Potential Employee Resume!');
-
-//            $message->attach(secure_asset('/img/community.png'));
+            }
 
         });
         return Redirect::to('/');

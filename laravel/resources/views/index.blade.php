@@ -125,6 +125,9 @@
 						<div class="input-field">
                             <input type="hidden" name="_token" value="{{ csrf_token() }}">
 						</div>
+						<div class="input-field">
+							<input type="hidden" name="action" value="contact">
+						</div>
                         <button type="submit" id="submit" class="btn btn-blue btn-effect">Send</button>
                     </form>
                 </div>
@@ -229,6 +232,12 @@
                         <div class="input-field">
                             <input type="file" name="resume" class="form-control">
                         </div>
+						<div class="input-field">
+							<input type="hidden" name="_token" value="{{ csrf_token() }}">
+						</div>
+						<div class="input-field">
+							<input type="hidden" name="action" value="resume">
+						</div>
                         <button type="submit" id="submit" class="btn btn-blue btn-effect">Send</button>
                     </form>
                 </div>
